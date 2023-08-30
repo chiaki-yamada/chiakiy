@@ -43,10 +43,16 @@ header {
   -webkit-backdrop-filter: blur(6.1px);
 }
 .header-inner {
+  padding: 0 12%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
 nav {
   position: absolute;
   right: 0;
@@ -98,7 +104,7 @@ nav.active {
   transform: rotate(-45deg);
 }
 nav ul {
-  padding: 150px 0;
+  padding: 250px 0;
   text-align: center;
 }
 nav li {
@@ -119,7 +125,7 @@ nav li {
 
 /* home */
 main {
-  padding: 0 8%;
+  padding: 13% 12%;
 }
 
 .main-img {
@@ -127,11 +133,6 @@ main {
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.text-container {
-  text-align: left;
-  margin-top: 1.5em;
 }
 .main-title-container__line {
   display: inline-block;
@@ -175,14 +176,17 @@ main {
 
 
 /* about */
-
+.sub-title {
+  display: block;
+  text-decoration: underline 5px solid rgb(194, 5, 246);
+}
 .about-container a, .interests-container a {
   color: #0D47A1;
   border-bottom: 1px solid #0D47A1;
 }
 .about-container a:hover, .interests-container a:hover {
-  color: #d644fa;
-  border-bottom: 1px solid #d644fa;
+  color: rgb(194, 5, 246);
+  border-bottom: 1px solid rgb(194, 5, 246)
 }
 .skill-container li, .interests-container li {
   list-style-type: disc;
@@ -303,9 +307,7 @@ footer {
 }
 /* media queries */
 @media (min-width: 768px) {
-  main {
-    padding: 8% 12%
-  }
+ 
   p,
   .skills-container li, .interests-container li {
     font-size: 1.2rem;
@@ -380,10 +382,12 @@ footer {
 @media (min-width: 1024px) {
   /* header */
   .header-inner {
+    padding: 0 12%;
+  }
+  .header-inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 8%;
   }
   nav {
     position: static;
