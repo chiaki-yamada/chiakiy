@@ -150,7 +150,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   animation: 
-    typing 2s steps(6),
+    typing 1.5s steps(6),
     cursor .4s step-end infinite alternate;
 }
 /* home  -cursor blinking */
