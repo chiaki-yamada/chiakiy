@@ -32,6 +32,18 @@ p {
   font-family: 'BhuTuka Expanded One';
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all 0.8s ease;
+  z-index: -1;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /* header */
 header {
   padding: 20px 0;
@@ -63,6 +75,7 @@ nav {
   transform: translateX(100%);
   background-color: white;
   transition: ease .4s;
+  
 }
 .hamburger {
   width: 45px; 
@@ -198,13 +211,13 @@ main {
 
 .about-container,
 .skills-container,
-.work-container {
-  margin: 10% 0;
+.work-container, .interests-container {
+  padding: 5% 0;
 }
 
-.skills-container,
-.work-container, .interests-container {
-  border-top: 1px solid #BDBDBD;
+.about-container, .skills-container,
+.work-container {
+  border-bottom: 1px solid #BDBDBD;
 }
 
 .skills-container, .interests-container {
@@ -250,12 +263,16 @@ h3 {
   color: black;
   border-radius: 5px;
   border: 1px solid black;
-  padding: 10px 20px;
+  padding: 5px 20px;
+  transition: .4s;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+  margin-top: auto;
 }
 
 .btn:hover {
   background-color: black;
   color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0);
 }
 .coffee-btn {
   margin: 5px; 
@@ -264,11 +281,11 @@ h3 {
 /* references */
 .reference {
   text-align: center;
-  margin-bottom: 40px;
-  border-top: 1px solid #BDBDBD;
+  padding: 5% 0;
+  border-bottom: 1px solid #BDBDBD;
 }
-.reference:first-child {
-  border-top: none;
+.reference:last-child {
+  border-bottom: none;
 }
 .bio-img {
   width: 150px;
@@ -335,7 +352,7 @@ footer {
 
   /* about */
   .about-container a, .interests-container a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   h2 {
@@ -453,6 +470,10 @@ footer {
   .main-desc {
     margin-right: 20px;
   }
+  /* about */
+  .about-container a, .interests-container a {
+    font-size: 1rem;
+}
   /* works */
   .works-container {
     margin: 10% 0;
@@ -460,6 +481,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
   }
+  p, .skills-container li, .interests-container li {
+    font-size: 1rem;
+}
 
 
   /* references */
@@ -494,14 +518,14 @@ footer {
   }
 
   .main-img {
-    width: 400px;
+    width: 300px;
   }
 
   /* about */
   .about-container,
   .skills-container,
   .work-container, .interests-container {
-    padding: 0 12%;
+    padding: 5% 18%;
   }
 
   /* works */
