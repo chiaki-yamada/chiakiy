@@ -7,6 +7,8 @@ ham.addEventListener('click', function() {
   nav.classList.toggle('active');
 });
 
+
+
 const reveals = document.querySelectorAll('.reveal');
 
 window.addEventListener('scroll', function() {
