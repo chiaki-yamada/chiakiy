@@ -53,7 +53,7 @@ header {
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
-  z-index: 1;
+  z-index: 9999;
 }
 .header-inner {
   padding: 0 12%;
@@ -78,7 +78,6 @@ nav {
   transition: ease .4s;
   
 }
-
 .hamburger {
   width: 2em; 
   height: 100%;
@@ -193,7 +192,7 @@ main {
   margin-top: 5%;
 }
 
-.arrow{
+.arrow {
   color: black;
   font-weight: bold;
   font-family: 'BhuTuka Expanded One';
@@ -203,7 +202,7 @@ main {
   text-decoration: none;
   outline: none;
 }
-.arrow::before{
+.arrow::before {
   content: '';
   position: absolute;
   bottom:-8px;
@@ -213,7 +212,7 @@ main {
   background:black;
   transition: all .3s;
 }
-.arrow::after{
+.arrow::after {
   content: '';
   position: absolute;
   bottom:-3px;
@@ -224,14 +223,15 @@ main {
   transform: rotate(35deg);
   transition: all .3s;
 }
-.arrow:hover::before{
+.arrow:hover::before {
   left:20%;
 
 }
-.arrow:hover::after{
+.arrow:hover::after {
   right:-5%;
 
 }
+
 .text-container{
   padding-bottom: 15%;
   border-bottom: 1px solid #BDBDBD;
@@ -252,7 +252,73 @@ main {
   margin-right: 8px;
   margin-bottom: 8px;
 }
+/* slider */
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 0 40px 0;
+}
+.slide-content{
+  border-radius: 25px;
+  width: 100%;
+}
+.card{
+  border-radius: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-img{
+  width: 100%;
+}
+.name{
+  font-size: 1.2em;
+  color: #707070;
+  margin: 0;
+}
+.description{
+  font-size: 0.85em;
+  color: #707070;
+  text-align: center;
 
+}
+
+.swiper-navBtn{
+  color: black;
+  transition: color 0.3s ease;
+  
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.swiper-navBtn:hover{
+  color: black;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 20px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #707070;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: black;
+}
 
 
 
@@ -648,7 +714,7 @@ footer {
   .works-intro {
     padding: 0 12%;
   }
-
+  
   /* references */
   .bio-title  {
     font-size: 1rem;
@@ -657,9 +723,7 @@ footer {
     padding: 8% 15%;
   }
 
-  
-
-
 }
+
 
 
