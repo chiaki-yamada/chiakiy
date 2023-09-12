@@ -78,6 +78,7 @@ nav {
   transition: ease .4s;
   
 }
+
 .hamburger {
   width: 2em; 
   height: 100%;
@@ -191,6 +192,67 @@ main {
   height: auto;
   margin-top: 5%;
 }
+
+.arrow{
+  color: black;
+  font-weight: bold;
+  font-family: 'BhuTuka Expanded One';
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  text-decoration: none;
+  outline: none;
+}
+.arrow::before{
+  content: '';
+  position: absolute;
+  bottom:-8px;
+  left:15%; 
+  width: 85%;
+  height: 1px;
+  background:black;
+  transition: all .3s;
+}
+.arrow::after{
+  content: '';
+  position: absolute;
+  bottom:-3px;
+  right:0;  
+  width: 15px;
+  height:1px;
+  background:black;
+  transform: rotate(35deg);
+  transition: all .3s;
+}
+.arrow:hover::before{
+  left:20%;
+
+}
+.arrow:hover::after{
+  right:-5%;
+
+}
+.text-container{
+  padding-bottom: 15%;
+  border-bottom: 1px solid #BDBDBD;
+}
+.home-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10% 0;
+
+}
+.home-skills li{
+  color: white;
+  font-weight: bold;
+  list-style: none;
+  padding: 2.5% 5%;
+  background-color: black;
+  border-radius: 50px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
 
 
 
