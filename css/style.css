@@ -187,13 +187,14 @@ main {
   margin-top: 15%;
 }
 .main-img {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-top: 5%;
 }
 
 .arrow {
   color: black;
+  font-size: 0.75em;
   font-weight: bold;
   font-family: 'BhuTuka Expanded One';
   position: relative;
@@ -229,28 +230,33 @@ main {
 }
 .arrow:hover::after {
   right:-5%;
-
 }
-
 .text-container{
   padding-bottom: 15%;
   border-bottom: 1px solid #BDBDBD;
 }
-.home-skills ul {
+.tech-stack {
+  padding: 5% 0;
+}
+.tech-stack ul {
   display: flex;
   flex-wrap: wrap;
   margin: 10% 0;
-
+  padding-left: 5%;
+  text-align: center;
 }
-.home-skills li{
+.tech-stack li{
   color: white;
   font-weight: bold;
   list-style: none;
   padding: 2.5% 5%;
-  background-color: black;
+  background-color: #424242;
   border-radius: 50px;
   margin-right: 8px;
   margin-bottom: 8px;
+}
+.tech-stack {
+  border-bottom: 1px solid #BDBDBD;
 }
 /* slider */
 .slide-container{
@@ -262,8 +268,10 @@ main {
   border-radius: 25px;
   width: 100%;
   
+  
 }
 .card{
+  align-items: center;
   border-radius: 25px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -274,12 +282,13 @@ main {
   align-items: center;
   padding: 10px 14px;
 }
+
 .card-img{
   width: 100%;
 }
 .name{
   font-size: 1.2em;
-  color: #707070;
+  color: #424242;
   margin: 0;
 }
 .description{
@@ -288,24 +297,26 @@ main {
   text-align: center;
 
 }
+.slider-logo {
+  display: flex;
+  align-items: center;
+}
+.slider-logo img {
+  margin: 0 5px;
+  width: 20px;
+}
+
 
 .swiper-navBtn{
   color: black;
-  transition: color 0.3s ease;
-  
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.3px);
-  -webkit-backdrop-filter: blur(2.3px);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color 0.3s ease; 
 }
 .swiper-navBtn:hover{
   color: black;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
-  font-size: 20px;
+  font-size: 30px;
 }
 .swiper-button-next{
   right: 0;
@@ -320,6 +331,9 @@ main {
 .swiper-pagination-bullet-active{
   background-color: black;
 }
+.swiper-navBtn {
+  display: none;
+}
 
 
 
@@ -328,6 +342,14 @@ main {
   display: block;
   font-size: 1.25em;
   text-decoration: underline 5px solid rgb(194, 5, 246);
+}
+.about-bio {
+  text-align: center;
+}
+.about-bio-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
 }
 .about-container a, .interests-container a {
   color: #0D47A1;
@@ -502,10 +524,22 @@ footer {
     margin-top: 10%;
   }
   .main-img {
-    width: 60%;
+    width: 70%;
     height: auto;
     margin-left: auto;
   }
+  .tech-stack li{ 
+    padding: 2% 5%;
+  }
+  .description {
+    width: 80%;
+    font-size: 0.9em;
+  }
+  
+  .swiper-navBtn {
+    display: block;
+  }
+  
 
 
   /* about */
@@ -628,15 +662,20 @@ footer {
    
   }
   .main-img-container {
-    margin-top: auto;
+    margin-top: 8%;
+    text-align: center;
   }
 
   .main-img {
-    width: 300px;
+    width: 350px;
+    margin-top: 0;
   }
 
   .main-desc {
     margin-right: 20px;
+  }
+  .tech-stack li{ 
+    padding: 1.5% 4%;
   }
   .slide-content {
     margin-top: 8%;
@@ -650,11 +689,16 @@ footer {
   .image-content {
     width: 50%;
     padding-left: 2em;
+    padding-right: 0;
   }
   .card-content {
     width: 40%;
     padding-right: 2em;
+    padding-left: 0;
   }
+  .description {
+    width: 90%;
+}
 
 
   /* about */
@@ -701,9 +745,13 @@ footer {
   .main-desc {
     margin-right: 50px;
   }
+  .main-img-container {
+    margin-top: 5%;
+  
+  }
 
   .main-img {
-    width: 300px;
+    width: 400px;
   }
   .typewriter-text {
     font-size: 6em;
@@ -712,6 +760,9 @@ footer {
     font-size: 1.75em;
     
   }
+  .swiper-slide {
+    padding: 6em 0;
+}
 
   /* about */
   .about-container,
