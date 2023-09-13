@@ -305,7 +305,14 @@ main {
   margin: 0 5px;
   width: 20px;
 }
-
+.work-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.work-btn p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
 
 .swiper-navBtn{
   color: black;
