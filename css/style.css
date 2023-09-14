@@ -452,6 +452,49 @@ h3 {
 .coffee-btn {
   margin: 5px; 
 }
+/* project */
+.project-title {
+  font-size: 1.2em;
+  color: black;
+}
+.project-text p{
+  text-align: center;
+  margin-top: 20px;
+}
+.project-desc li {
+  list-style: none;
+}
+.project-tech-stack {
+  font-style: italic;
+  font-size: 0.8em;
+}
+.project-link {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 6px 13px;
+  border-radius: 5px;
+}
+.project-link:hover {
+  background-color: #424242;
+}
+.project-wrapper {
+  padding: 2em;
+}
+.project-wrapper ul {
+  padding-left: 1em;
+}
+.project-container2 {
+  background-color: black;
+}
+.project-container2 h2 {
+  color: white;
+}
+.improvement li {
+  color: white;
+}
+
+
 
 /* references */
 .reference {
@@ -719,13 +762,13 @@ footer {
   }
   .description {
     width: 90%;
-}
+  }
 
 
   /* about */
   .about-container a, .interests-container a {
     font-size: 1.1em;
-}
+  }
   /* works */
   .works-container {
     margin: 10% 0;
@@ -735,7 +778,12 @@ footer {
   }
   p, .skills-container li, .interests-container li {
     font-size: 1.1em;
-}
+  }
+  /* project */
+  .project-container {
+    display: flex;
+  }
+ 
 
 
   /* references */
