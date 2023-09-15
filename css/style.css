@@ -298,7 +298,6 @@ main {
 
 }
 .slider-logo {
-  display: flex;
   align-items: center;
 }
 .slider-logo img {
@@ -412,6 +411,7 @@ h3 {
   text-align: center;
   margin-bottom: 4%;
 }
+
 .works-intro {
   text-align: center;
 }
@@ -422,7 +422,9 @@ h3 {
 .site-title {
   font-size: 1.2em;;
 }
-
+.work a {
+  margin-top: 10px;
+}
 .btn {
   display: inline-block;
   background-color: white;
@@ -441,9 +443,7 @@ h3 {
   color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0);
 }
-.coffee-btn {
-  margin: 5px; 
-}
+
 /* project */
 .project-title {
   font-size: 1.2em;
